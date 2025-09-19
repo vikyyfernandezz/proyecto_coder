@@ -1,0 +1,1079 @@
+/* Fuente............................................*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Selector universal............................................*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General...........................................*/
+body {
+    font-family: "Libre Franklin", sans-serif ;
+    color: #351711 ;
+}
+
+/* Barra de navegación...........................................*/
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #351711 !important;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+}
+
+.navbar-brand { /* Nombre de la marca*/
+    text-decoration: none ;
+    color: white;
+    font-size: 25px ;
+    font-weight: 900 ;
+    text-align: center;
+}
+nav ul .nav-link {
+     color: white !important;
+}
+
+.navbar-toggler {
+    color: white !important;
+}
+
+/* Index: Hero section............................................*/
+
+.hero {
+    padding-top: 140px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/pexels-anastas-20439887.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.btn { /* Boton con enlace*/
+    color: #351711 ;
+    background-color: white;
+    padding: 4px ;
+    font-size: 12px ;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10% ;
+    text-align: center;
+
+}
+
+.hero h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Index: Destacados section............................................*/
+.destacados h2 { 
+    font-size: 25px ;
+    text-align: center ;
+    margin: 20px ;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap ;
+    margin: 10px ;
+   
+}
+
+.card {
+    background-color: #fff;
+    height: 330px ;
+    border-radius: 10px ;
+    overflow: hidden ;
+    box-shadow: 0px 2px 4px rgba (0,0,0,0.2);
+    margin: 20px ;
+    text-align: center ;
+    align-items: center ;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4);
+    transform: translate(-3%);
+}
+
+.card img {
+    width: 190px ;
+    height: 200px ;
+}
+
+.card-content h3 {
+    font-size: 15px ;
+    margin-top: 4px ;
+    text-align: center ;
+}
+
+.card-content .btn {
+    text-align: center ;
+    display: inline-block ;
+    padding: 4px ;
+    margin-bottom: 4px;
+    color: #fff;
+    background-color: #351711;
+    border: #351711;
+}
+/* Index: Presentacion section............................................*/
+.presentacion {
+    background-color: #d0cecc;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.presentacion img {
+    width: 500px;
+    height: 300px;
+    margin-right: 40px;
+}
+
+.presentacion p {
+    font-size: 15px;
+    width: 40%;
+    margin-left: 40px;
+   
+}
+
+/* Index: Video section............................................*/
+.iframe-index iframe {
+    width: 100%;
+}
+/* Index: Mision section............................................*/
+
+.mision {
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mision img {
+    width: 500px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+.mision p {
+    font-size: 15px;
+    width: 40%;
+    margin-right: 40px;
+}
+/* Productos: productos section............................................*/
+.productos h2{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 140px;
+    color: #351711;
+}
+
+/* Productos: card section............................................*/
+.card-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* Contacto: Background section............................................*/
+.contactanos {
+    padding-top: 140px;
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/beige.img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Contacto: Formulario section............................................*/
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+.input{
+	background-color: #fff; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #351711; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fff; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #351711; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+    float: center; 	
+}
+
+
+.boton {
+	height: 30px; 
+	padding: 5px;	
+	margin-bottom: 10px; 
+	margin-top: 10px; 	
+    text-align: center;
+	text-transform: uppercase;
+	background-color: #351711; 
+	border-color: #351711; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 405px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+h2{
+	font-size: 30px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #351711;
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+/* Nosotros: Nosotros section.........................................*/
+.nosotros h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 140px;
+    color: #351711;
+}
+/* Nosotros: Grid section.........................................*/
+.product-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    align-content: center;
+}
+
+.category {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.category img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    opacity: 0.85;
+    margin: 20px;
+}
+
+.category p {
+   text-align: center;
+    font-size: 15px;
+    margin: 30px;
+}
+/* Testimonios: Background section............................................*/
+.reviews {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/beige.img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Testimonios: Reseñas section............................................*/
+.sus-reseñas h2{
+  font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: #351711;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 10px;
+  align-items: center;
+  margin: 50px;
+ 
+}
+
+.box {
+  padding: 35px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.box p {
+  color: #0e0e0e;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 10px;
+
+}
+
+.in-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.box-img img{
+  width: 100px;
+  height: auto;
+}
+
+.box-text h3 {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.bi.bi-star-fill {
+  color: #fee140;
+  font-size: 14px;
+  padding-top: -50px;
+}
+.formulario h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Footer............................................*/
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #351711 ;
+  min-height: 40px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+.menu-icon {
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+footer h4 {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+/* Media queries............................................*/
+
+@media screen and (max-width: 969px) {
+.presentacion p {
+    font-size: 13px;
+    width: 34%;
+}
+.mision p {
+  font-size: 13px;
+  width: 34%;
+}
+}
+
+@media screen and (max-width: 879px) {
+.product-categories {
+    grid-template-rows: repeat(3, 300px);
+    padding: 40px;
+}
+  .presentacion {
+    height: 300px;
+    justify-content: space-between;
+  
+}
+.presentacion img {
+    width: 50%;
+    margin-right: 0;
+}
+.presentacion P {
+   width: 40%;
+   margin-right: 40px;
+}
+
+.mision {
+    justify-content: space-between;
+    height: 320px;
+}
+.mision img {
+    width: 50%;
+    margin-left: 0;
+   
+}
+.mision P {
+   width: 40%;
+   margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 801px) {
+.sus-reseñas h2{
+  font-size: 22px;
+}
+.reviews-container {
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  margin: 40px;
+ 
+}
+.box {
+  padding: 30px;
+}
+.box p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 9px;
+
+}
+.in-box {
+  gap: 25px;
+}
+.box-img img{
+  width: 80px;
+  height: auto;
+}
+.box-text h3 {
+  margin: 2px 0;
+  font-size: 12px;
+}
+.bi.bi-star-fill {
+  font-size: 12px;
+}
+.formulario h3 {
+  font-size: 18px;
+}
+  .product-categories {
+    grid-template-rows: repeat(3, 290px);
+    padding: 35px;
+}
+  .category p {
+    font-size: 13px;
+    margin: 20px;
+}
+  .navbar-brand { 
+    font-size: 20px ;
+}
+nav ul .nav-link {
+     font-size: 14px;
+}
+
+.navbar-toggler {
+    font-size: 14px;
+}
+.dropdown-item {
+     font-size: 14px;
+}
+.btn { 
+    font-size: 10px ;
+}
+.hero h2 {
+    font-size: 20px;
+}
+.hero p {
+    font-size: 13px;
+}
+.form-control {
+   font-size: 10px ;
+}
+.destacados h2 { 
+    font-size: 20px ;
+}
+.card {
+    height: 290px ;
+}
+.card img {
+    width: 170px ;
+    height: 180px ;
+}
+.card-content h3 {
+    font-size: 13px ;
+}
+.card-content p {
+    font-size: 12px ;
+    margin-top: -10px;
+}
+.card-content .btn {
+    font-size: 10px;
+}
+.icon {
+  font-size: 25px;
+}
+.menu-icon {
+  font-size: 11px;
+}
+footer h4 {
+    font-size: 8px;
+}
+  .presentacion img {
+    margin-left: 30px;
+    height: 200px;
+    width: 300px;
+}
+.presentacion P {
+  font-size: 10px;
+  width: 40%;
+   margin-right: 30px;
+}
+
+.mision img {
+    margin-right: 30px;
+    height: 200px;
+    width: 300px;
+   
+}
+.mision P {
+  font-size: 10px;
+  width: 40%;
+   margin-left: 30px;
+}
+.contact_form{	
+	width: 420px; 
+  height: auto;
+  margin: 70px auto;
+	border-radius: 10px;  
+	padding-top: 25px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 25px; 
+}
+.input{
+	width: 360px; 
+	height: 30px; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 10px; 
+}
+textarea{
+	width: 360px; 
+	height: 150px; 
+	border-radius: 5px;  
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 10px; 
+  padding-top: 10px; 
+}
+.boton {
+	height: 20px; 
+	padding: 5px;	
+	margin-bottom: 10px; 
+	margin-top: 10px; 	
+	border-radius: 10px;	
+	width: 360px;  
+}
+h2{
+	font-size: 20px;  
+	padding-bottom: 10px; 
+}
+h3{
+	font-size: 14px; 
+	padding-bottom: 20px; 
+}
+p{
+	font-size: 11px; 
+}
+
+}
+@media screen and (max-width: 667px) {
+.nosotros h2 {
+    font-size: 20px;
+    padding-top: 100px;
+}
+.product-categories {
+    grid-template-rows: repeat(3, 280px);
+    padding: 10px;
+}
+
+.category p {
+    font-size: 13px;
+    margin: 15px;
+}
+  .presentacion img {
+    margin-left: 15px;
+    height: 190px;
+    width: 280px;
+}
+.presentacion P {
+  font-size: 10px;
+  width: 40%;
+   margin-right: 15px;
+}
+
+.mision img {
+    margin-right: 15px;
+    height: 180px;
+    width: 280px;
+   
+}
+.mision P {
+  font-size: 10px;
+  width: 40%;
+   margin-left: 15px;
+}
+.card {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 240px;
+}
+.card img {
+    width: 150px ;
+    height: 160px ;
+}
+.card-content p {
+    margin-top: -30px;
+}
+.card-content .btn {
+    margin-top: -30px;
+}
+.iframe-index iframe {
+   height: 250px;
+}
+
+}
+@media screen and (max-width: 589px) {
+.sus-reseñas h2{
+  font-size: 19px;
+}
+.reviews-container {
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  margin: 30px;
+ 
+}
+.box {
+  padding: 20px;
+}
+.box p {
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 9px;
+
+}
+.in-box {
+  gap: 20px;
+}
+.box-img img{
+  width: 70px;
+  height: auto;
+}
+.box-text h3 {
+  margin: 2px 0;
+  font-size: 10px;
+}
+.bi.bi-star-fill {
+  font-size: 10px;
+}
+.formulario h3 {
+  font-size: 15px;
+}
+  .product-categories {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 250px);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 20px;
+}
+.category .parrafo1 {
+  grid-row-start: 4;
+   grid-row-end: 5;
+}
+.category .imagen1{
+  grid-row-start: 3;
+   grid-row-end: 4;
+}
+  .card {
+    margin-left: 5px;
+    margin-right: 5px;
+  
+}
+.presentacion img {
+    margin-left: 0;
+    height: 190px;
+    width: 290px;
+}
+.presentacion P {
+  font-size: 9px;
+margin-right: 7px;
+   margin-left: 7px;
+}
+
+.mision img {
+    margin-right: 0;
+    height: 190px;
+    width: 290px;
+   
+}
+.mision P {
+  font-size: 9px;
+  margin-right: 7px;
+ margin-left: 7px;
+}
+}
+@media screen and (max-width: 507px) {
+.contact_form{	
+	width: 380px; 
+  height: auto;
+  margin:50px auto;
+	border-radius: 8px;  
+	padding-top: 20px;
+	padding-bottom: 17px;  
+  padding-left: 20px; 
+}
+.input{
+	width: 300px; 
+	height: 25px; 
+	margin-top: 8px;  
+	padding-left: 8px;
+  margin-bottom: 8px; 
+}
+textarea{
+	width: 300px; 
+	height: 110px; 
+	border-radius: 5px;  
+	margin-top: 8px;  
+	padding-left: 8px;
+  margin-bottom: 8px; 
+  padding-top: 8px; 
+}
+.boton {
+	height: 18px; 
+	padding: 5px;	
+	margin-bottom: 8px; 
+	margin-top: 8px; 	
+	border-radius: 8px;	
+	width: 300px;  
+}
+h2{
+	font-size: 18px;  
+	padding-bottom: 10px; 
+}
+h3{
+	font-size: 12px; 
+	padding-bottom: 20px; 
+}
+p{
+	font-size: 9px; 
+}
+  .card {
+    margin: 20px;
+  
+}
+.presentacion {
+  display: block;
+  background-color: #d0cecc;
+  height: 320px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.presentacion img {
+    margin: 10px;
+}
+.presentacion P {
+  font-size: 9px;
+  width: 80%;
+   margin: 10px;
+   margin-left: auto;
+  margin-right: auto;
+}
+.mision {
+  display: block;
+  align-items: center;
+   text-align: center;
+  justify-content: center;
+}
+.mision img {
+    margin: 10px;
+}
+.mision P {
+  font-size: 9px;
+  width: 80%;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.iframe-index iframe {
+   height: 200px;
+}
+}
+
+@media screen and (max-width: 450px) {
+.contact_form{	
+	width: 320px; 
+  height: auto;
+  margin: 45px auto;
+	border-radius: 7px;  
+	padding-top: 18px;
+	padding-bottom: 15px;  
+  padding-left: 18px; 
+}
+.input{
+	width: 260px; 
+	height: 20px; 
+	margin-top: 7px;  
+	padding-left: 7px;
+  margin-bottom: 7px; 
+}
+textarea{
+	width: 260px; 
+	height: 90px; 
+	border-radius: 7px;  
+	margin-top: 7px;  
+	padding-left: 7px;
+  margin-bottom: 7px; 
+  padding-top: 7px; 
+}
+.boton {
+	height: 16px; 
+	padding: 5px;	
+	margin-bottom: 7px; 
+	margin-top: 7px; 	
+	border-radius: 7px;	
+	width: 260px;  
+}
+h2{
+	font-size: 16px;  
+	padding-bottom: 8px; 
+}
+h3{
+	font-size: 10px; 
+	padding-bottom: 18px; 
+}
+p{
+	font-size: 7px; 
+}
+  .nosotros h2 {
+    font-size: 17px;
+}
+.productos h2 {
+  font-size: 17px;
+}
+.sus-reseñas h2 {
+  font-size: 17px;
+}
+nav ul .nav-link {
+     font-size: 10px;
+}
+
+.dropdown-item {
+     font-size: 10px;
+}
+.navbar-toggler {
+    font-size: 10px;
+}
+.btn { 
+    font-size: 9px ;
+}
+.hero h2 {
+    font-size: 17px;
+}
+.hero p {
+    font-size: 12px;
+}
+.form-control {
+   font-size: 10px ;
+}
+.destacados h2 { 
+    font-size: 17px ;
+}
+
+.icon {
+  font-size: 18px;
+  align-items: center;
+}
+.menu-icon {
+  font-size: 9px;
+  align-items: center;
+}
+footer h4 {
+    font-size: 8px;
+    text-align: center;
+}
+
+  .presentacion img {
+    margin: 0;
+    height: 200px;
+    width: 100%;
+}
+
+.mision img {
+   margin: 0;
+    height: 200px;
+    width: 100%;
+   
+}
+.presentacion P {
+  font-size: 9px;
+  width: 80%;
+   margin: 10px;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.mision P {
+  font-size: 9px;
+  width: 80%;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sus-reseñas h2{
+  font-size: 17px;
+}
+.reviews-container {
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  margin: 30px;
+ 
+}
+.box {
+  padding: 17px;
+}
+.box p {
+  font-size: 10px;
+  line-height: 16px;
+  margin-bottom: 9px;
+
+}
+.in-box {
+  gap: 17px;
+}
+.box-img img{
+  width: 45px;
+  height: auto;
+}
+.box-text h3 {
+  margin: 2px 0;
+  font-size: 10px;
+}
+.bi.bi-star-fill {
+  font-size: 10px;
+  padding-top: -80px;
+}
+.formulario h3 {
+  font-size: 12px;
+}
+}

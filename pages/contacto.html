@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Loop Skincare</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Nombre de la marca -->
+                <a class="navbar-brand" href="../index.html">LOOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Conocé Más
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./testimonios.html">Testimonios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Background section-->
+        <section class="contactanos">
+
+        </section>
+        <!-- Formulario section-->
+        <div class="contact_form">
+
+            <div class="formulario">
+                <h2>Formulario de contacto</h2>
+
+                <form action="submeter-formulario.php" method="post">
+
+
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre completo
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input class="input" type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                            placeholder="Escribe tu nombre">
+                    </p>
+
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input class="input" type="email" name="introducir_email" id="email" required="obligatorio"
+                            placeholder="Escribe tu Email">
+                    </p>
+
+                    <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                        <input class="input" type="tel" name="introducir_telefono" id="telefono"
+                            placeholder="Escribe tu teléfono">
+                    </p>
+
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                            placeholder="Deja aquí tu comentario..."></textarea>
+                    </p>
+
+                    <button class="boton" type="submit" name="enviar_formulario" id="enviar">
+                        <p>Enviar</p>
+                    </button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="https://www.facebook.com/" class="icon">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://www.instagram.com/" class="icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://www.tiktok.com/es" class="icon">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="./contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+            <li class="menu-elem">
+                <a href="./testimonios.html" class="menu-icon"> Testimonios</a>
+            </li>
+            <li class="menu-elem">
+                <a href="./nosotros.html" class="menu-icon"> Sobre Nosotros </a>
+            </li>
+        </ul>
+        <h4>© 2025 Loop Skincare. Todos los derechos reservados.</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
