@@ -1,0 +1,28 @@
+//Variables//
+$color-principal: #351711;
+$color-secundario: #fff;
+$color-terciario: #0e0e0e;
+
+//Listas//
+$font-size: 12px, 14px, 16px, 18px, 20px, 30px;
+
+//Mixins//
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+//Extends//
+%boton {
+    padding: 8px 18px;
+  background-color: #fff;
+  color: #351711;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;;
+
+}

@@ -1,0 +1,728 @@
+@media screen and (max-width: 969px) {
+  .presentacion p {
+    font-size: 13px;
+    width: 34%;
+  }
+
+  .mision p {
+    font-size: 13px;
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 879px) {
+.product-categories {
+    grid-template-rows: repeat(3, 300px);
+    padding: 40px;
+  }
+  .presentacion {
+    height: 300px;
+    justify-content: space-between;
+
+  }
+
+  .presentacion img {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .presentacion P {
+    width: 40%;
+    margin-right: 40px;
+  }
+
+  .mision {
+    justify-content: space-between;
+    height: 325px;
+  }
+
+  .mision img {
+    width: 50%;
+    margin-right: 0;
+
+  }
+
+  .mision P {
+    width: 40%;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 801px) {
+ .product-categories {
+    grid-template-rows: repeat(3, 290px);
+    padding: 35px;
+  }
+  .sus-reseñas h2 {
+    font-size: 22px;
+  }
+
+  .reviews-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    margin: 40px;
+
+  }
+
+  .reviews-container .box {
+    padding: 30px;
+  }
+
+  .reviews-container .box p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 9px;
+
+  }
+
+  .reviews-container .box .in-box {
+    gap: 25px;
+  }
+
+  .reviews-container .box .in-box .box-img img {
+    width: 80px;
+    height: auto;
+  }
+
+ .reviews-container .box .in-box .box-text h3 {
+    margin: 2px 0;
+    font-size: 12px;
+  }
+
+   .reviews-container .box .in-box .box-text .ratings .bi.bi-star-fill {
+    font-size: 12px;
+  }
+
+  .contact_form .formulario h3 {
+    font-size: 18px;
+  }
+
+  .product-categories .category p {
+    font-size: 13px;
+    margin: 20px;
+  }
+
+  nav div .navbar-brand {
+    font-size: 20px;
+  }
+
+  nav div .collapse.navbar-collapse ul li .nav-link {
+    font-size: 14px;
+  }
+
+  nav div .navbar-toggler {
+    font-size: 14px;
+  }
+
+  nav div .collapse.navbar-collapse ul .nav-item.dropdown .dropdown-menu .dropdown-item {
+    font-size: 14px;
+  }
+
+  .btn { //Se utiliza en más de un html//
+    font-size: 10px;
+  }
+
+  .hero div h2 {
+    font-size: 20px;
+  }
+
+  .hero div p {
+    font-size: 13px;
+  }
+
+  nav div .collapsenavbar-collapse form .form-control {
+    font-size: 10px;
+  }
+
+  .destacados h2 {
+    font-size: 20px;
+  }
+
+  .card { //Se utiliza en más de un html//
+    height: 290px;
+  }
+
+  .card-container .card img {
+    width: 200px;
+    height: 180px;
+  }
+    .card-productos .card img {
+    width: 170px;
+    height: 160px;
+}
+
+  section div .card .card-content h3 {
+    font-size: 13px;
+  }
+
+   section div .card .card-content p {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+
+   section div .card .card-content .btn {
+    font-size: 10px;
+    margin-top: -5px;
+  }
+
+  footer il .icon-elem .icon {
+    font-size: 25px;
+  }
+
+  footer ul .menu-elem .menu-icon {
+    font-size: 11px;
+  }
+
+  footer h4 {
+    font-size: 8px;
+  }
+
+  .presentacion img {
+    margin-left: 30px;
+    height: 200px;
+    width: 300px;
+  }
+
+  .presentacion P {
+    font-size: 10px;
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  .mision img {
+    margin-right: 30px;
+    height: 200px;
+    width: 300px;
+
+  }
+
+  .mision P {
+    font-size: 10px;
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  .contact_form {
+    width: 420px;
+    height: auto;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 25px;
+  }
+
+  .contact_form .formulario form p .input {
+    width: 360px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact_form .formulario form p textarea {
+    width: 360px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .contact_form .formulario form .boton {
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 360px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+}
+@media screen and (max-width: 667px) {
+   .product-categories {
+    grid-template-rows: repeat(3, 280px);
+    padding: 10px;
+  }
+  .nosotros h2 {
+    font-size: 20px;
+    padding-top: 100px;
+  }
+
+  .category p {
+    font-size: 13px;
+    margin: 15px;
+  }
+
+  .presentacion img {
+    margin-left: 15px;
+    height: 190px;
+    width: 280px;
+  }
+
+  .presentacion P {
+    font-size: 10px;
+    width: 40%;
+    margin-right: 15px;
+  }
+
+  .mision img {
+    margin-right: 15px;
+    height: 180px;
+    width: 280px;
+
+  }
+
+  .mision P {
+    font-size: 10px;
+    width: 40%;
+    margin-right: 15px;
+  }
+
+  .card {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 240px;
+  }
+
+  .card img {
+    width: 150px;
+    height: 160px;
+  }
+
+  section div .card .card-content p {
+    margin-top: -30px;
+  }
+
+  section div .card .card-content .btn {
+    margin-top: -30px;
+  }
+
+  .iframe-index iframe {
+    height: 250px;
+  }
+   .card-container .card img {
+    width: 180px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 589px) {
+   .product-categories {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 250px);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 20px;
+  }
+  .sus-reseñas h2 {
+    font-size: 19px;
+  }
+
+  .reviews-container {
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    margin: 30px;
+
+  }
+
+  .reviews-container .box {
+    padding: 20px;
+  }
+
+ .reviews-container .box p {
+    font-size: 10px;
+    line-height: 18px;
+    margin-bottom: 9px;
+
+  }
+
+  .reviews-container .box .in-box {
+    gap: 20px;
+  }
+
+  .reviews-container .box .in-box .box-img img {
+    width: 70px;
+    height: auto;
+  }
+
+  .reviews-container .box .in-box .box-text h3 {
+    margin: 2px 0;
+    font-size: 10px;
+  }
+
+  .reviews-container .box .in-box .box-text .ratings .bi.bi-star-fill {
+    font-size: 10px;
+  }
+
+  .contact_form .formulario h3 {
+    font-size: 15px;
+  }
+
+  .product-categories .category .parrafo1 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .product-categories .category .imagen1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .card {
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+
+  .presentacion img {
+    margin-left: 0;
+    height: 190px;
+    width: 290px;
+  }
+
+  .presentacion P {
+    font-size: 9px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+
+  .mision img {
+    margin-right: 0;
+    height: 190px;
+    width: 290px;
+
+  }
+
+  .mision P {
+    font-size: 9px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+}
+@media screen and (max-width: 507px) {
+  .contact_form {
+    width: 380px;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+  }
+
+   .contact_form .formulario form p .input {
+    width: 300px;
+    height: 25px;
+    margin-top: 8px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+  }
+
+   .contact_form .formulario form p textarea {
+    width: 300px;
+    height: 110px;
+    border-radius: 5px;
+    margin-top: 8px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .contact_form .formulario form .boton {
+    height: 18px;
+    padding: 5px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 9px;
+  }
+
+  .card {
+    margin: 20px;
+
+  }
+
+  .presentacion {
+    display: block;
+    background-color: #351711;
+    height: 320px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .presentacion img {
+    margin: 10px;
+  }
+
+  .presentacion P {
+    font-size: 9px;
+    width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mision {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .mision img {
+    margin: 10px;
+  }
+
+  .mision P {
+    font-size: 9px;
+    width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .iframe-index iframe {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact_form {
+    width: 320px;
+    height: auto;
+    margin: 45px auto;
+    border-radius: 7px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+  }
+
+  .contact_form .formulario form p .input {
+    width: 260px;
+    height: 20px;
+    margin-top: 7px;
+    padding-left: 7px;
+    margin-bottom: 7px;
+  }
+
+  .contact_form .formulario form p textarea {
+    width: 260px;
+    height: 90px;
+    border-radius: 7px;
+    margin-top: 7px;
+    padding-left: 7px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .contact_form .formulario form .boton {
+    height: 20px;
+    border-radius: 7px;
+    width: 260px;
+    
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 12px;
+    padding-bottom: 18px;
+  }
+
+  p {
+    font-size: 9px;
+  }
+
+  .nosotros h2 {
+    font-size: 19px;
+  }
+
+  .productos h2 {
+    font-size: 19px;
+  }
+
+  .sus-reseñas h2 {
+    font-size: 19px;
+  }
+
+  nav div .collapse.navbar-collapse ul li .nav-link {
+    font-size: 16px;
+  }
+
+  nav div .collapse.navbar-collapse ul .nav-item.dropdown .dropdown-menu .dropdown-item {
+    font-size: 16px;
+  }
+
+  nav div .navbar-toggler {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 11px;
+
+  }
+
+  .hero div h2 {
+    font-size: 19px;
+  }
+
+  .hero div p {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav div .collapsenavbar-collapse form .form-control {
+    font-size: 12px;
+  }
+
+  .destacados h2 {
+    font-size: 19px;
+  }
+
+  section div .card .card-content h3 {
+    margin-bottom: 12px;
+  }
+
+  section div .card .card-content p {
+    margin-bottom: 19px;
+  }
+
+  footer il .icon-elem .icon {
+    font-size: 18px;
+    align-items: center;
+  }
+
+  footer ul .menu-elem .menu-icon {
+    font-size: 11px;
+    align-items: center;
+  }
+
+  footer h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .presentacion img {
+    margin: 0px;
+    padding: 0;
+    height: 350px;
+    width: 100%;
+  }
+
+  .mision img {
+    margin: 0px;
+    padding: 0;
+    height: 350px;
+    width: 100%;
+
+  }
+
+  .presentacion P {
+    font-size: 12px;
+    color: #0e0e0e;
+    width: 80%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mision P {
+    font-size: 12px;
+    width: 80%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mision {
+    height: 550px;
+  }
+
+  .presentacion {
+    height: 550px;
+    background-color: #fff;
+  }
+
+  .sus-reseñas h2 {
+    font-size: 19px;
+  }
+
+  .reviews-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    margin: 30px;
+
+  }
+
+  .reviews-container .box {
+    padding: 17px;
+  }
+
+  .reviews-container .box p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 9px;
+
+  }
+
+  .reviews-container .box .in-box {
+    gap: 17px;
+  }
+
+  .reviews-container .box .in-box .box-img img {
+    width: 45px;
+    height: auto;
+  }
+
+  .reviews-container .box .in-box .box-text h3 {
+    margin: 2px 0;
+    font-size: 12px;
+  }
+
+  .reviews-container .box .in-box .box-text .ratings .bi.bi-star-fill {
+    font-size: 12px;
+    padding-top: -80px;
+  }
+
+  .contact_form .formulario h3 {
+    font-size: 14px;
+  }
+
+  .hero {
+    background-image: url(../img/background2.png);
+  }
+
+  .card {
+    margin: 2px;
+  }
+}
