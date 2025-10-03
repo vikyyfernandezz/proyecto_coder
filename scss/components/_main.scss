@@ -1,3 +1,4 @@
+ @use "sass:list";
  @use "../base/funcionalidades" as *; 
 
  //Barra de navegación//
@@ -55,7 +56,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
     div {
         h2 {
-            font-size: nth($font-size , 6 );
+            font-size: list.nth($font-size , 6 );
             font-weight: 700;
             text-align: center;
             color: $color-secundario;
@@ -63,7 +64,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
         }
 
         p {
-            font-size: nth($font-size , 4 );
+            font-size: list.nth($font-size , 4 );
             margin-bottom: 40px;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
@@ -84,7 +85,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 //Destacados section//
 .destacados {
     h2 {
-        font-size: nth($font-size , 6 );
+        font-size: list.nth($font-size , 6 );
         text-align: center;
         margin: 20px;
     }
@@ -115,12 +116,12 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
             }
             .card-content {
                 h3 {
-                    font-size: nth($font-size , 4 );
+                    font-size: list.nth($font-size , 4 );
                     margin-top: 4px;
                     text-align: center;
                 }
                 .card-content p {
-                    font-size: nth($font-size , 3);
+                    font-size: list.nth($font-size , 3);
                     margin-top: -20px;
                     text-align: center;
                 }
@@ -157,7 +158,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
         margin-right: 40px;
     }
     p {
-        font-size: nth($font-size , 3 );
+        font-size: list.nth($font-size , 3 );
         color: $color-secundario;
         width: 40%;
         margin-left: 40px;
@@ -183,7 +184,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
         margin-right: 40px;
     }
     p {
-        font-size: nth($font-size , 3 );
+        font-size: list.nth($font-size , 3 );
         width: 40%;
         margin-left: 40px;
     }
@@ -191,7 +192,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 // Productos //
 .productos {
     h2 {
-        font-size: nth($font-size , 6 );
+        font-size: list.nth($font-size , 6 );
         text-align: center;
         padding-top: 140px;
         color: $color-principal;
@@ -235,14 +236,14 @@ section {
     padding-left: 30px;
     .formulario {
         h2 {
-            font-size: nth($font-size , 6 );
+            font-size: list.nth($font-size , 6 );
             text-align: letf;
             padding-bottom: 20px;
             color: $color-principal;
         }
         form {
             p {
-                font-size: nth($font-size , 3 );
+                font-size: list.nth($font-size , 3 );
                 color: $color-terciario;
                 label {
                     display: block;
@@ -297,7 +298,7 @@ section {
 // Nosotros//
 .nosotros {
     h2 {
-        font-size: nth($font-size , 6 );
+        font-size: list.nth($font-size , 6 );
         text-align: center;
         padding-top: 140px;
         color: $color-principal;
@@ -323,7 +324,7 @@ section {
         text-align: center;
         p {
             text-align: center;
-            font-size: nth($font-size , 3 );
+            font-size: list.nth($font-size , 3 );
             margin: 30px;
         }
         img {
@@ -351,7 +352,7 @@ section {
 
 .sus-reseñas {
     h2 {
-        font-size: nth($font-size , 6 );
+        font-size: list.nth($font-size , 6 );
         text-align: center;
         padding-top: 10px;
         color: $color-principal;
@@ -369,7 +370,7 @@ section {
         border-radius: 10px;
         p {
             color: $color-terciario;
-            font-size: nth($font-size , 3 );
+            font-size: list.nth($font-size , 3 );
             line-height: 30px;
             margin-bottom: 10px;
         }
@@ -385,7 +386,7 @@ section {
                 .box-text {
                     h3 {
                         margin: 2px 0;
-                        font-size: nth($font-size , 2 );
+                        font-size: list.nth($font-size , 2 );
                     }
                     .ratings {
                         .bi.bi-star-fill {
@@ -402,7 +403,7 @@ section {
 .contact_form {
     .formulario {
         h3 {
-            font-size: nth($font-size , 5 );
+            font-size: list.nth($font-size , 5 );
             text-align: center;
         }
     }
