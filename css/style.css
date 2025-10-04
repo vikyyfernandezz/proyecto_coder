@@ -27,11 +27,46 @@ body {
   color: #351711;
 }
 
+/* Anuncio...........................................*/
+.anuncio {
+  width: 100%;
+  height: 30px;
+  color: #0e0e0e;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.anuncio .scroll {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite;
+}
+.anuncio .scroll span {
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding: 0 4rem;
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
   background-color: #351711 !important;
   width: 100%;
   position: fixed;
   align-items: center;
+  margin-top: 30px;
 }
 nav.navbar.navbar-expand-lg.bg-body-tertiary div .navbar-brand {
   text-decoration: none;
@@ -61,10 +96,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary div form .btn:hover {
   color: #fff;
   width: 100%;
   height: 80vh;
-  background-image: url(../img/pexels-anastas-20439887.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/pexels-anastas-20439887.jpg) center/cover no-repeat;
   background-attachment: fixed;
 }
 .hero div h2 {
