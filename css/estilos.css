@@ -13,6 +13,7 @@ body {
   font-family: "Libre Franklin", sans-serif;
   color: #351711;
 }
+
 /* Anuncio...........................................*/
 .anuncio {
   width: 100%;
@@ -20,18 +21,19 @@ body {
   color: #0e0e0e;
   background-color: #fff;
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
   z-index: 10;
   overflow: hidden;
-  display: flex; 
+  display: flex;
   align-items: center;
-  
+
 }
+
 .anuncio .scroll {
- display: flex; 
- white-space: nowrap; 
- animation: scrollText 25s linear infinite;
+  display: flex;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite;
 }
 
 .anuncio .scroll span {
@@ -39,16 +41,19 @@ body {
   padding-top: 8px;
   padding-bottom: 6px;
   padding: 0 4rem;
- 
+
 }
-@keyframes scrollText { 
-  from { 
-    transform: translateX(100%); 
-  } 
-  to { 
-    transform: translateX(-100%); 
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }
+
 /* Barra de navegación...........................................*/
 
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
@@ -57,7 +62,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   position: fixed;
   align-items: center;
   margin-top: 30px;
-  
+
 }
 
 .navbar-brand {
@@ -80,35 +85,67 @@ nav ul .nav-link {
 /* Index: Hero section............................................*/
 
 .hero {
-  padding-top: 110px;
-  display: flex;                
-  flex-direction: column;
+  padding-top: 140px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
   color: white;
   width: 100%;
-  height: 80vh;
- background: linear-gradient(
-      rgba(0,0,0,0.4),
-      rgba(0,0,0,0.4)
-    ),
-    url(../img/pexels-anastas-20439887.jpg) center/cover no-repeat;
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
+    url(../img/Beigeh.png) center/cover no-repeat;
   background-attachment: fixed;
-   
+
 }
-.hero h2 {
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
+
+.hero div img {
+  margin-bottom: 20px;
+  margin-right: 80px;
+  width: 480;
+  height: 380px;
+
+}
+
+
+.hero h1 {
+
+  font-size: 50px;
+  font-weight: 900;
+  margin-left: 80px;
+  text-align: left;
   color: #fff;
+  opacity: 0;
+}
+
+.hero h4 {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #fff;
+  opacity: 0;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 19px;
+  font-weight: 400;
+  margin-left: 80px;
+  width: 85%;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: #fff;
+  opacity: 0;
+
+}
+
+
+.hero .btn {
+
+  margin-left: 80px !important;
+  transition: all .6s ease;
 }
 
 .btn {
@@ -125,11 +162,90 @@ nav ul .nav-link {
   text-align: center;
 
 }
+
 .btn:hover {
   background-color: #351711;
   color: #fff;
   transition: 0.3s;
 }
+
+.mobile {
+  display: none;
+}
+
+/*Index: Formulario ....................................................*/
+.formulacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10%;
+  background-color: #ffffff;
+  gap: 80px;
+}
+
+.texto-formulacion {
+  flex: 1;
+}
+
+.texto-formulacion h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #351711;
+  margin-bottom: 15px;
+}
+
+.texto-formulacion p {
+  font-size: 16px;
+  color: #351711;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.formulario {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.formulario p {
+  font-size: 20px;
+  color: #351711;
+  margin-bottom: 20px;
+}
+
+.filas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #351711;
+  ;
+  background: transparent;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #351711;
+  width: 100%;
+  cursor: pointer;
+  margin: 5px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+span {
+  font-size: 18px;
+  color: #351711;
+}
+
+
 
 /* Index: Destacados section............................................*/
 .destacados h2 {
@@ -175,11 +291,12 @@ nav ul .nav-link {
   text-align: center;
 }
 
-.card-content p{
+.card-content p {
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
 }
+
 .card-content .btn {
   text-align: center;
   font-size: 14px;
@@ -196,30 +313,7 @@ nav ul .nav-link {
   color: #351711;
   transition: 0.3s;
 }
-/* Index: Presentacion section............................................*/
-.presentacion {
-  background-color: #351711;
-  width: 100%;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-.presentacion img {
-  width: 500px;
-  height: 300px;
-  margin-right: 40px;
-}
-
-.presentacion p {
-  font-size: 16px;
-  color: #fff;
-  width: 40%;
-  margin-left: 40px;
-
-}
 
 /* Index: Video section............................................*/
 .iframe-index iframe {
@@ -238,23 +332,48 @@ nav ul .nav-link {
   flex-wrap: wrap;
 }
 
+.mision h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #351711;
+  margin: 20px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.mision div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
 .mision img {
   width: 500px;
   height: 300px;
-  margin-right: 40px;
+  margin-left: 80px;
+  z-index: 1;
 }
 
 .mision p {
   font-size: 16px;
-  width: 40%;
-  margin-left: 40px;
+  width: 35%;
+  margin-right: 80px;
+  z-index: 1;
 }
 
 /* Productos: productos section............................................*/
-.productos h2 {
+.productos h1 {
   font-size: 30px;
   text-align: center;
   padding-top: 140px;
+  color: #351711;
+}
+
+.productos h2 {
+  font-size: 20px;
+  text-align: center;
   color: #351711;
 }
 
@@ -276,61 +395,83 @@ nav ul .nav-link {
   padding-top: 140px;
   width: 100%;
   height: 200px;
-  background-image: url(../img/beige.img.jpg);
+  background-image: url(../img/Beigeh.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info iframe {
+  margin-left: 50px;
+  margin: 30px auto;
+  border-radius: 5px;
+
+}
+
 /* Contacto: Formulario section............................................*/
 .contact_form {
   width: 460px;
   height: auto;
-  margin: 80px auto;
+  margin-right: 40px;
+  margin: 20px auto;
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #fbfbfb;
+  background-color: #fff !important;
   padding-left: 30px;
+
 }
 
+.formulario h1 {
+  font-size: 30px;
+}
 
 .input {
   background-color: #fff;
-  width: 408px;
+  width: 380px;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #351711;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 
 textarea {
   background-color: #fff;
-  width: 405px;
+  width: 380px;
   height: 150px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #351711;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  margin-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  font-size: 15px;
 }
 
 
 label {
   display: block;
   float: center;
+  font-size: 15px;
 }
-
-
+form .aviso {
+  font-size: 12px;
+}
 .boton {
   height: 30px;
   padding: 5px;
@@ -342,31 +483,33 @@ label {
   border-color: #351711;
   border-style: solid;
   border-radius: 10px;
-  width: 405px;
+  width: 380px;
   cursor: pointer;
 }
 
 
-button p {
+.boton p {
   color: #fff;
+  font-size: 15px;
 }
 
 
-h2 {
-  font-size: 30px;
-  text-align: letf;
-  padding-bottom: 20px;
-  color: #351711;
+
+/* Contacto: info de contacto.........................................*/
+.informacion {
+  margin-top: -100px;
+  margin-left: 80px;
+  margin-bottom: 200px;
 }
 
-p {
-  font-size: 16px;
-  color: #0e0e0e;
+.informacion ul li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
-
 
 /* Nosotros: Nosotros section.........................................*/
-.nosotros h2 {
+.nosotros h1 {
   font-size: 30px;
   text-align: center;
   padding-top: 140px;
@@ -408,17 +551,23 @@ p {
   margin: 20px;
 }
 
+.category h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
 .category p {
   text-align: center;
-  font-size: 16px;
-  margin: 30px;
+  font-size: 14px;
+  margin: 18px;
 }
 
 /* Testimonios: Background section............................................*/
 .reviews {
   width: 100%;
   height: 200px;
-  background-image: url(../img/beige.img.jpg);
+  background-image: url(../img/Beigeh.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -426,7 +575,7 @@ p {
 }
 
 /* Testimonios: Reseñas section............................................*/
-.sus-reseñas h2 {
+.sus-reseñas h1 {
   font-size: 30px;
   text-align: center;
   padding-top: 10px;
@@ -478,7 +627,7 @@ p {
   padding-top: -50px;
 }
 
-.formulario h3 {
+.formulario h2 {
   font-size: 20px;
   text-align: center;
 }
@@ -556,61 +705,157 @@ footer h4 {
 
 /* Media queries............................................*/
 
+
 @media screen and (max-width: 969px) {
-  .presentacion p {
-    font-size: 13px;
-    width: 34%;
+ .informacion {
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+  .desktop {
+    display: none;
   }
 
-  .mision p {
-    font-size: 13px;
-    width: 34%;
+  .mobile {
+    display: block;
+  }
+
+
+ .mision img {
+  width: 480px;
+  height: 280px;
+
+  
+}
+
+.mision p {
+  font-size: 14px;
+ 
+}
+.mision h2 {
+  font-size: 25px;
+}
+.formulacion h2 {
+  font-size: 25px;
+}
+.formulario p {
+  font-size: 18px;
+}
+ .info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    grid-template-areas:
+      "item2"
+      "item1";
+  }
+
+  .info iframe {
+    grid-area: item1;
+  }
+
+  .info div {
+    grid-area: item2;
   }
 }
 
 @media screen and (max-width: 879px) {
-   .product-categories {
+  .product-categories {
     grid-template-rows: repeat(3, 300px);
     padding: 40px;
   }
-  .presentacion {
-    height: 300px;
-    justify-content: space-between;
-
-  }
-
-  .presentacion img {
-    width: 50%;
-    margin-right: 0;
-  }
-
-  .presentacion P {
-    width: 40%;
-    margin-right: 40px;
-  }
-
-  .mision {
-    justify-content: space-between;
-    height: 325px;
-  }
 
   .mision img {
-    width: 50%;
-    margin-right: 0;
-
-  }
-
-  .mision P {
-    width: 40%;
-    margin-right: 40px;
-  }
+  width: 440px;
+  height: 240px;
+  margin: 10px;
 }
 
+.mision p {
+  font-size: 13px;
+  margin: 10px;
+}
+
+
+  .info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    grid-template-areas:
+      "item2"
+      "item1";
+  }
+
+  .info iframe {
+    grid-area: item1;
+  }
+
+  .info div {
+    grid-area: item2;
+  }
+
+  .contact_form {
+    width: 480px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto;
+  }
+
+  .informacion {
+    margin-top: 10px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+  }
+
+}
+
+
 @media screen and (max-width: 801px) {
-   .product-categories {
+  .formulacion h2 {
+    font-size: 20px;
+  }
+  .mision h2 {
+    font-size: 20px;
+  }
+  .informacion {
+    margin-left: 70px;
+  }
+
+  .informacion ul li p {
+    font-size: 15px;
+  }
+
+  .boton {
+    width: 360px;
+  }
+
+  .campo {
+  width: 355px;
+ }
+
+  .texto_mensaje {
+    width: 360px;
+  }
+
+  .fila .input {
+    width: 155px;
+    align-items: center;
+
+  }
+.hero p {
+  font-size: 18px;
+}
+  .product-categories {
     grid-template-rows: repeat(3, 290px);
     padding: 35px;
   }
+
   .sus-reseñas h2 {
     font-size: 22px;
   }
@@ -679,14 +924,6 @@ footer h4 {
     font-size: 10px;
   }
 
-  .hero h2 {
-    font-size: 20px;
-  }
-
-  .hero p {
-    font-size: 13px;
-  }
-
   .form-control {
     font-size: 10px;
   }
@@ -703,10 +940,11 @@ footer h4 {
     width: 200px;
     height: 180px;
   }
-.card-productos .card img {
+
+  .card-productos .card img {
     width: 170px;
     height: 160px;
-}
+  }
 
   .card-content h3 {
     font-size: 13px;
@@ -734,33 +972,10 @@ footer h4 {
     font-size: 8px;
   }
 
-  .presentacion img {
-    margin-left: 30px;
-    height: 200px;
-    width: 300px;
-  }
-
-  .presentacion P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 30px;
-  }
-
-  .mision img {
-    margin-left: 30px;
-    height: 200px;
-    width: 300px;
-
-  }
-
-  .mision P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 30px;
-  }
+ 
 
   .contact_form {
-    width: 420px;
+    width: 450px;
     height: auto;
     margin: 70px auto;
     border-radius: 10px;
@@ -789,7 +1004,7 @@ footer h4 {
   }
 
   .boton {
-    height: 20px;
+    height: 30px;
     padding: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -812,12 +1027,79 @@ footer h4 {
   }
 
 }
+@media screen and (max-width: 740px) {
+ .mision img {
+  width: 380px;
+  height: 200px;
+}
+.mision p {
+  font-size: 11px;
+  width: 38%;
+}
+#product-type {
+  font-size: 14px;
+}
+#concern {
+  font-size: 14px;
 
-@media screen and (max-width: 667px) {
-   .product-categories {
+}
+.formulario p {
+  font-size: 16px;
+}
+.formulario span {
+  font-size: 16px;
+}
+.hero h1 {
+  font-size: 43px;
+}
+
+}
+@media screen and (max-width: 679px) {
+#product-type {
+  font-size: 12px;
+}
+#concern {
+  font-size: 12px;
+
+}
+.formulario p {
+  font-size: 14px;
+}
+.formulario span {
+  font-size: 14px;
+}
+.formulacion p {
+  font-size: 14px;
+}
+  .informacion {
+    margin-left: 90px;
+    margin-top: 15px;
+  }
+   .campo {
+  width: 355px;
+ }
+  .info iframe {
+    margin: 0;
+    width: 99%;
+  }
+  .informacion ul li p {
+    font-size: 13px;
+  }
+  .formulario p {
+    font-size: 13px;
+  }
+  .formulario div p {
+    font-size: 13px;
+  }
+
+  .boton {
+    height: 30px;
+  }
+  .product-categories {
     grid-template-rows: repeat(3, 280px);
     padding: 10px;
   }
+
   .nosotros h2 {
     font-size: 20px;
     padding-top: 100px;
@@ -827,31 +1109,16 @@ footer h4 {
     font-size: 13px;
     margin: 15px;
   }
-
-  .presentacion img {
-    margin-left: 15px;
-    height: 190px;
-    width: 280px;
-  }
-
-  .presentacion P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 15px;
-  }
-
   .mision img {
-    margin-left: 15px;
-    height: 180px;
-    width: 280px;
-
-  }
-
-  .mision P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 15px;
-  }
+  width: 340px;
+  height: 200px;
+  margin: 0;
+}
+.mision p {
+  font-size: 11px;
+  width: 38%;
+  margin: 8px;
+}
 
   .card {
     margin-left: 50px;
@@ -875,20 +1142,40 @@ footer h4 {
   .iframe-index iframe {
     height: 250px;
   }
-   .card-container .card img {
+
+  .card-container .card img {
     width: 180px;
     height: 160px;
+  }
+  .hero {
+  height: auto;
+}
+ .hero div img {
+    width: 250px;
+    height: 400px;
+    margin-right: 30px;
+  }
+.formulacion {
+  margin: 8px;
+  padding: 10px;
+}
+.hero h1 {
+    font-size: 38px;
   }
 }
 
 @media screen and (max-width: 589px) {
-   .product-categories {
+  .hero h1 {
+    font-size: 35px;
+  }
+  .product-categories {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 250px);
     grid-row: 2/3;
     grid-column: 1/2;
     padding: 20px;
   }
+
   .sus-reseñas h2 {
     font-size: 19px;
   }
@@ -948,17 +1235,6 @@ footer h4 {
 
   }
 
-  .presentacion img {
-    margin-left: 0;
-    height: 190px;
-    width: 290px;
-  }
-
-  .presentacion P {
-    font-size: 9px;
-    margin-right: 7px;
-    margin-left: 7px;
-  }
 
   .mision img {
     margin-left: 0;
@@ -972,46 +1248,132 @@ footer h4 {
     margin-right: 7px;
     margin-left: 7px;
   }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
 }
 
+@media screen and (max-width: 520px) {
+ .campo {
+  width: 360px;
+ }
+ .fila {
+  width: 385px;
+ }
+ .input {
+    width: 360px;
+  }
+
+  .informacion {
+    margin: 10px;
+  }
+   .mision {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .mision img {
+     width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mision P {
+    font-size: 12px;
+    width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulacion {
+    margin: 40px;
+    padding: 0px;
+    
+  }
+  .formulario {
+  padding: 30px 20px;
+
+}
+  .formulario span {
+    font-size: 12px;
+  }
+  .formulacion h2 {
+    font-size: 18px;
+  }
+  .formulacion p {
+    font-size: 13px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+
+}
 @media screen and (max-width: 507px) {
-  .contact_form {
-    width: 380px;
-    height: auto;
-    margin: 50px auto;
-    border-radius: 8px;
-    padding-top: 20px;
-    padding-bottom: 17px;
-    padding-left: 20px;
+.formulacion {
+  flex-direction: column;
+    
+}
+ 
+.hero {
+  padding-top: 110px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+ .desktop {
+    display: block;
   }
 
+  .mobile {
+    display: none;
+  }
+
+  .hero h1 {
+  margin-left: 0px;
+  
+  }
+  .hero h4 {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .hero p {
+    margin-left: 0px;
+    width: 90%;
+  }
+ 
+.hero div img {
+  width: 100%;
+  height: 280px;
+
+}
+.hero .btn {
+  margin-bottom: 20px;
+  margin-left: 0px !important;
+}
+
+.boton {
+    width: 240px;
+    height: 20px;
+    }
+  
+  .texto_mensaje {
+  width: 240px;
+  }
   .input {
-    width: 300px;
-    height: 25px;
-    margin-top: 8px;
-    padding-left: 8px;
-    margin-bottom: 8px;
+  width: 240px;
   }
-
-  textarea {
-    width: 300px;
-    height: 110px;
-    border-radius: 5px;
-    margin-top: 8px;
-    padding-left: 8px;
-    margin-bottom: 8px;
-    padding-top: 8px;
-  }
-
-  .boton {
-    height: 18px;
-    padding: 5px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    border-radius: 8px;
+  .contact_form {
     width: 300px;
   }
-
+  .boton p {
+    font-size: 10px;
+  }
   h2 {
     font-size: 18px;
     padding-bottom: 10px;
@@ -1031,87 +1393,29 @@ footer h4 {
 
   }
 
-  .presentacion {
-    display: block;
-    background-color: #351711;
-    height: 320px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .presentacion img {
-    margin: 10px;
-  }
-
-  .presentacion P {
-    font-size: 9px;
-    width: 80%;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .mision {
-    display: block;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .mision img {
-    margin: 10px;
-  }
-
-  .mision P {
-    font-size: 9px;
-    width: 80%;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .iframe-index iframe {
     height: 200px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .contact_form {
+ 
+  .campo {
+  width: 320px;
+ }
+ .fila {
+  width: 320px;
+ }
+ .input {
     width: 320px;
-    height: auto;
-    margin: 45px auto;
-    border-radius: 7px;
-    padding-top: 18px;
-    padding-bottom: 15px;
-    padding-left: 18px;
   }
-
-  .input {
-    width: 260px;
-    height: 20px;
-    margin-top: 7px;
-    padding-left: 7px;
-    margin-bottom: 7px;
+ .texto_mensaje {
+    width: 320px;
   }
-
-  textarea {
-    width: 260px;
-    height: 90px;
-    border-radius: 7px;
-    margin-top: 7px;
-    padding-left: 7px;
-    margin-bottom: 7px;
-    padding-top: 7px;
-  }
-
   .boton {
-    height: 20px;
-    border-radius: 7px;
-    width: 260px;
-    
+    width: 320px;
   }
-
+ 
   h2 {
     font-size: 18px;
     padding-bottom: 8px;
@@ -1155,16 +1459,6 @@ footer h4 {
 
   }
 
-  .hero h2 {
-    font-size: 19px;
-  }
-
-  .hero p {
-    font-size: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   .form-control {
     font-size: 12px;
   }
@@ -1196,12 +1490,6 @@ footer h4 {
     text-align: center;
   }
 
-  .presentacion img {
-    margin: 0px;
-    padding: 0;
-    height: 350px;
-    width: 100%;
-  }
 
   .mision img {
     margin: 0px;
@@ -1211,30 +1499,20 @@ footer h4 {
 
   }
 
-  .presentacion P {
-    font-size: 12px;
-    color: #0e0e0e;
-    width: 80%;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  
   .mision P {
     font-size: 12px;
     width: 80%;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
   }
-
+.mision h2 {
+  font-size: 19px;
+}
   .mision {
-    height: 550px;
-  }
-
-  .presentacion {
-    height: 550px;
-    background-color: #fff;
+    height: 600px;
   }
 
   .sus-reseñas h2 {
@@ -1280,12 +1558,39 @@ footer h4 {
   .formulario h3 {
     font-size: 14px;
   }
-
-  .hero {
-    background-image: url(../img/background2.png);
+  .hero h1 {
+    margin-left: 20px;
   }
+  .hero h4 {
+    margin-left: 20px;
+  }
+  .hero p {
+    margin-left: 20px;
+    width: 79%;
+  }
+  .hero .btn {
+    margin-left: 20px !important;
+  }
+
 
   .card {
     margin: 2px;
+  }
+  .boton {
+    width: 240px;
+    height: 20px;
+    }
+  
+  .texto_mensaje {
+  width: 240px;
+  }
+  .input {
+  width: 240px;
+  }
+  .contact_form {
+    width: 300px;
+  }
+  .boton p {
+    font-size: 10px;
   }
 }

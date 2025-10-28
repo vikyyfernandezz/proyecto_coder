@@ -4,7 +4,7 @@ $color-secundario: #fff;
 $color-terciario: #0e0e0e;
 
 //Listas//
-$font-size: 12px, 14px, 16px, 18px, 20px, 30px;
+$font-size: 12px, 14px, 16px, 18px, 20px, 30px, 50px;
 
 //Mixins//
 @mixin flex ($flex, $justify, $align){
@@ -14,7 +14,7 @@ $font-size: 12px, 14px, 16px, 18px, 20px, 30px;
 }
 //Extends//
 %boton {
-    padding: 8px 18px;
+  padding: 8px 18px;
   background-color: #fff;
   color: #351711;
   font-weight: 600;

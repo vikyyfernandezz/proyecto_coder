@@ -1,58 +1,206 @@
-@media screen and (max-width: 969px) {
-  .presentacion p {
-    font-size: 13px;
-    width: 34%;
+@media screen and (max-width: 1089px) {
+  //Index//
+  .hero div img {
+    width: 300px;
+    height: 410px;
   }
 
-  .mision p {
-    font-size: 13px;
-    width: 34%;
+  .mision div img {
+    margin-left: 40px;
+
+  }
+
+  .mision div p {
+    margin-right: 40px;
+
+  }
+  //Contacto//
+  .info iframe {
+    margin: 20px;
+  }
+
+  .contact_form {
+
+    width: 410px;
+    margin: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+  }
+
+  .informacion {
+    margin-top: -110px;
+    margin-left: 5px;
+
+  }
+
+}
+
+@media screen and (max-width: 969px) {
+  //Index//
+  .hero div .desktop {
+    display: none;
+  }
+
+  .hero div .mobile {
+    display: block;
+  }
+
+  .mision div img {
+    width: 480px;
+    height: 280px;
+  }
+
+  .mision div p {
+    font-size: 14px;
+  }
+
+  .mision h2 {
+    font-size: 25px;
+  }
+
+  .formulacion .texto-formulacion h2 {
+    font-size: 25px;
+  }
+
+  .formulacion .formulario p {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 879px) {
-.product-categories {
+ 
+//Index//
+  .mision div img {
+    width: 440px;
+    height: 240px;
+    margin: 10px;
+  }
+
+  .mision div p {
+    font-size: 13px;
+    margin: 10px;
+  }
+
+//Nosotros//
+  .product-categories {
     grid-template-rows: repeat(3, 300px);
     padding: 40px;
   }
-  .presentacion {
-    height: 300px;
-    justify-content: space-between;
-
+//Contacto//
+  .info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    grid-template-areas:
+      "item2"
+      "item1";
   }
 
-  .presentacion img {
-    width: 50%;
-    margin-right: 0;
+  .info iframe {
+    grid-area: item1;
   }
 
-  .presentacion P {
-    width: 40%;
-    margin-right: 40px;
+  .info .contact_form {
+    grid-area: item2;
   }
 
-  .mision {
-    justify-content: space-between;
-    height: 325px;
+  .contact_form {
+    width: 410px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto;
   }
 
-  .mision img {
-    width: 50%;
-    margin-right: 0;
-
+  .informacion {
+    margin-top: 0px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
-
-  .mision P {
-    width: 40%;
-    margin-right: 40px;
-  }
+  //Testimonios//
+  
 }
+
 @media screen and (max-width: 801px) {
- .product-categories {
+ //Index//
+  .hero div p {
+    font-size: 18px;
+  }
+ .formulacion .texto-formulacion h2 {
+    font-size: 20px;
+  }
+
+  .mision h2 {
+    font-size: 20px;
+  }
+  
+  .destacados h2 {
+    font-size: 20px;
+  }
+
+ .destacados .card-container .card {
+    height: 290px;
+  }
+
+  .destacados .card-container .card img {
+    width: 200px;
+    height: 180px;
+  }
+ .destacados .card-container .card .card-content h3 {
+    font-size: 13px;
+  }
+
+  .destacados .card-container .card .card-content p {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+
+  .destacados .card-container .card .card-content .btn {
+    font-size: 10px;
+    margin-top: -5px;
+  }
+
+  //Productos
+  .card-productos .card img {
+    width: 170px;
+    height: 160px;
+  }
+
+//Contacto//
+  .informacion {
+    margin-left: 70px;
+  }
+
+  .informacion ul li p {
+    font-size: 14px;
+  }
+
+  .info .contact_form {
+    width: 420px;
+    height: auto;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 25px;
+  }
+//Nosotros//
+  .product-categories {
     grid-template-rows: repeat(3, 290px);
     padding: 35px;
   }
-  .sus-reseñas h2 {
+   .product-categories .category p {
+    font-size: 13px;
+    margin: 20px;
+  }
+//Testimonios//
+  .sus-reseñas h1 {
     font-size: 22px;
   }
 
@@ -73,169 +221,50 @@
 
   }
 
-  .reviews-container .box .in-box {
+ .reviews-container .box .in-box {
     gap: 25px;
   }
 
-  .reviews-container .box .in-box .box-img img {
+ .reviews-container .box .in-box .box-img img {
     width: 80px;
     height: auto;
   }
 
- .reviews-container .box .in-box .box-text h3 {
+  .reviews-container .box .in-box .box-text h3 {
     margin: 2px 0;
-    font-size: 12px;
-  }
-
-   .reviews-container .box .in-box .box-text .ratings .bi.bi-star-fill {
-    font-size: 12px;
-  }
-
-  .contact_form .formulario h3 {
-    font-size: 18px;
-  }
-
-  .product-categories .category p {
-    font-size: 13px;
-    margin: 20px;
-  }
-
-  nav div .navbar-brand {
     font-size: 20px;
   }
 
-  nav div .collapse.navbar-collapse ul li .nav-link {
+  nav.navbar.navbar-expand-lg.bg-body-tertiary div div ul .nav-link {
     font-size: 14px;
   }
 
-  nav div .navbar-toggler {
+   nav.navbar.navbar-expand-lg.bg-body-tertiary div .navbar-toggler {
     font-size: 14px;
   }
 
-  nav div .collapse.navbar-collapse ul .nav-item.dropdown .dropdown-menu .dropdown-item {
+   nav.navbar.navbar-expand-lg.bg-body-tertiary div div ul li .dropdown-item {
     font-size: 14px;
   }
 
-  .btn { //Se utiliza en más de un html//
+   nav.navbar.navbar-expand-lg.bg-body-tertiary div form .btn {
     font-size: 10px;
   }
 
-  .hero div h2 {
-    font-size: 20px;
-  }
-
-  .hero div p {
-    font-size: 13px;
-  }
-
-  nav div .collapsenavbar-collapse form .form-control {
+  nav.navbar.navbar-expand-lg.bg-body-tertiary div form .form-control {
     font-size: 10px;
   }
 
-  .destacados h2 {
-    font-size: 20px;
-  }
-
-  .card { //Se utiliza en más de un html//
-    height: 290px;
-  }
-
-  .card-container .card img {
-    width: 200px;
-    height: 180px;
-  }
-    .card-productos .card img {
-    width: 170px;
-    height: 160px;
-}
-
-  section div .card .card-content h3 {
-    font-size: 13px;
-  }
-
-   section div .card .card-content p {
-    font-size: 12px;
-    margin-top: -5px;
-  }
-
-   section div .card .card-content .btn {
-    font-size: 10px;
-    margin-top: -5px;
-  }
-
-  footer il .icon-elem .icon {
+  footer .social-icon .icon-elem .icon {
     font-size: 25px;
   }
 
-  footer ul .menu-elem .menu-icon {
+  footer .menu .menu-elem .menu-icon {
     font-size: 11px;
   }
 
   footer h4 {
     font-size: 8px;
-  }
-
-  .presentacion img {
-    margin-left: 30px;
-    height: 200px;
-    width: 300px;
-  }
-
-  .presentacion P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 30px;
-  }
-
-  .mision img {
-    margin-left: 30px;
-    height: 200px;
-    width: 300px;
-
-  }
-
-  .mision P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 30px;
-  }
-
-  .contact_form {
-    width: 420px;
-    height: auto;
-    margin: 70px auto;
-    border-radius: 10px;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    background-color: #fbfbfb;
-    padding-left: 25px;
-  }
-
-  .contact_form .formulario form p .input {
-    width: 360px;
-    height: 30px;
-    margin-top: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  .contact_form .formulario form p textarea {
-    width: 360px;
-    height: 150px;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-  }
-
-  .contact_form .formulario form .boton {
-    height: 20px;
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    width: 360px;
   }
 
   h2 {
@@ -253,107 +282,221 @@
   }
 
 }
-@media screen and (max-width: 667px) {
-   .product-categories {
-    grid-template-rows: repeat(3, 280px);
-    padding: 10px;
-  }
-  .nosotros h2 {
-    font-size: 20px;
-    padding-top: 100px;
+
+@media screen and (max-width: 740px) {
+  //Index//
+  .mision div img {
+    width: 380px;
+    height: 200px;
   }
 
-  .category p {
-    font-size: 13px;
-    margin: 15px;
+  .mision div p {
+    font-size: 11px;
+    width: 38%;
   }
 
-  .presentacion img {
-    margin-left: 15px;
-    height: 190px;
-    width: 280px;
+  .formulacion .formulario form .filas #product-type {
+    font-size: 14px;
   }
 
-  .presentacion P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 15px;
-  }
-
-  .mision img {
-    margin-left: 15px;
-    height: 180px;
-    width: 280px;
+   .formulacion .formulario form select {
+    font-size: 14px;
 
   }
 
-  .mision P {
-    font-size: 10px;
-    width: 40%;
-    margin-right: 15px;
+  .formulacion .formulario form p {
+    font-size: 16px;
   }
 
-  .card {
+  .formulacion .formulario form .filas span {
+    font-size: 16px;
+  }
+
+  .hero div h1 {
+    font-size: 43px;
+  }
+
+}
+
+@media screen and (max-width: 679px) {
+ //Index//
+  .formulacion .formulario form .filas #product-type {
+    font-size: 12px;
+  }
+
+  .formulacion .formulario form select {
+    font-size: 12px;
+
+  }
+
+  .formulacion .formulario form p {
+    font-size: 14px;
+  }
+
+  .formulacion .formulario form .filas span {
+    font-size: 14px;
+  }
+
+  .formulacion div p {
+    font-size: 14px;
+  }
+  .mision div img {
+    width: 340px;
+    height: 200px;
+    margin: 0;
+  }
+
+  .mision div p {
+    font-size: 11px;
+    width: 38%;
+    margin: 8px;
+  }
+
+  .destacados .card-container .card {
     margin-left: 50px;
     margin-right: 50px;
     height: 240px;
   }
 
-  .card img {
-    width: 150px;
+  .destacados .card-container .card img {
+    width: 180px;
     height: 160px;
   }
 
-  section div .card .card-content p {
+ .destacados .card-container .card .card-content p {
     margin-top: -30px;
   }
 
-  section div .card .card-content .btn {
+  .destacados .card-container .card .card-content .btn {
     margin-top: -30px;
   }
 
   .iframe-index iframe {
     height: 250px;
   }
-   .card-container .card img {
-    width: 180px;
-    height: 160px;
+
+  .hero {
+    height: auto;
   }
+
+  .hero div img {
+    width: 250px;
+    height: 400px;
+    margin-right: 30px;
+  }
+
+  .formulacion {
+    margin: 8px;
+    padding: 10px;
+  }
+
+  .hero div h1 {
+    font-size: 38px;
+  }
+//Contacto//
+  .informacion {
+    margin-left: 90px;
+    margin-top: 15px;
+  }
+
+
+  .info iframe {
+    margin: 0;
+    width: 99%;
+  }
+
+  .informacion ul li p {
+    font-size: 13px;
+  }
+
+
+//Nosotros//
+  .product-categories {
+    grid-template-rows: repeat(3, 280px);
+    padding: 10px;
+  }
+
+  .nosotros h1 {
+    font-size: 20px;
+    padding-top: 100px;
+  }
+
+  .product-categories .category p {
+    font-size: 13px;
+    margin: 15px;
+  }
+
+  
 }
+
 @media screen and (max-width: 589px) {
-   .product-categories {
+ //Index//
+  
+  .destacados .card-container .card {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .mision div img {
+    margin-left: 0;
+    height: 190px;
+    width: 290px;
+  }
+
+  .mision div P {
+    font-size: 9px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+
+  .hero div h1 {
+    font-size: 32px;
+  }
+
+  .hero div p {
+    font-size: 16px;
+  }
+//Nosotros//
+  .product-categories {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 250px);
     grid-row: 2/3;
     grid-column: 1/2;
     padding: 20px;
   }
-  .sus-reseñas h2 {
+  .product-categories .category .parrafo1 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .product-categories .category .imagen1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  //Testimonios//
+  .sus-reseñas h1 {
     font-size: 19px;
   }
 
   .reviews-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     margin: 30px;
-
   }
 
   .reviews-container .box {
     padding: 20px;
   }
 
- .reviews-container .box p {
+  .reviews-container .box p {
     font-size: 10px;
     line-height: 18px;
     margin-bottom: 9px;
-
   }
 
   .reviews-container .box .in-box {
     gap: 20px;
   }
 
-  .reviews-container .box .in-box .box-img img {
+ .reviews-container .box .in-box .box-img img {
     width: 70px;
     height: auto;
   }
@@ -367,89 +510,163 @@
     font-size: 10px;
   }
 
-  .contact_form .formulario h3 {
-    font-size: 15px;
-  }
-
-  .product-categories .category .parrafo1 {
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-
-  .product-categories .category .imagen1 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .card {
-    margin-left: 5px;
-    margin-right: 5px;
-
-  }
-
-  .presentacion img {
-    margin-left: 0;
-    height: 190px;
-    width: 290px;
-  }
-
-  .presentacion P {
-    font-size: 9px;
-    margin-right: 7px;
-    margin-left: 7px;
-  }
-
-  .mision img {
-    margin-left: 0;
-    height: 190px;
-    width: 290px;
-
-  }
-
-  .mision P {
-    font-size: 9px;
-    margin-right: 7px;
-    margin-left: 7px;
-  }
 }
+
+@media screen and (max-width: 520px) {
+  //Contacto//
+
+  .informacion {
+    margin: 10px;
+  }
+//Index//
+  .mision {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .mision div img {
+    width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mision div P {
+    font-size: 12px;
+    width: 80%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .formulacion {
+    margin: 40px;
+    padding: 0px;
+
+  }
+
+  .formulacion .formulario {
+    padding: 30px 20px;
+
+  }
+
+  .formulacion .formulario form .filas span {
+    font-size: 12px;
+  }
+
+  .formulacion .texto-formulacion h2 {
+    font-size: 18px;
+  }
+
+  .formulacion .texto-formulacion p {
+    font-size: 13px;
+  }
+
+  .hero div h1 {
+    font-size: 30px;
+  }
+
+}
+
 @media screen and (max-width: 507px) {
-  .contact_form {
-    width: 380px;
+ //Index//
+  .formulacion {
+    flex-direction: column;
+
+  }
+ .destacados .card-container .card {
+    margin: 20px;
+
+  }
+
+  .iframe-index iframe {
+    height: 200px;
+  }
+  .hero {
+    padding-top: 110px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
-    margin: 50px auto;
-    border-radius: 8px;
-    padding-top: 20px;
-    padding-bottom: 17px;
-    padding-left: 20px;
   }
 
-   .contact_form .formulario form p .input {
-    width: 300px;
-    height: 25px;
-    margin-top: 8px;
-    padding-left: 8px;
-    margin-bottom: 8px;
+  .hero div .desktop {
+    display: block;
   }
 
-   .contact_form .formulario form p textarea {
-    width: 300px;
-    height: 110px;
-    border-radius: 5px;
-    margin-top: 8px;
-    padding-left: 8px;
-    margin-bottom: 8px;
-    padding-top: 8px;
+  .hero div .mobile {
+    display: none;
   }
 
-  .contact_form .formulario form .boton {
-    height: 18px;
-    padding: 5px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    border-radius: 8px;
-    width: 300px;
+  .hero div h1 {
+    margin-left: 0px;
+
   }
 
+  .hero div h4 {
+    display: none;
+  }
+
+  .hero div p {
+    margin-left: 0px;
+    width: 90%;
+  }
+
+  .hero div img {
+    width: 80%;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .hero div .btn {
+    margin-bottom: 20px;
+    margin-left: 0px !important;
+    padding: 6px 16px;
+    font-size: 14px;
+  
+  }
+//Contacto//
+ .info  .contact_form .formulario h1 {
+  font-size: 20px;
+}
+ .info .contact_form .formulario h3 {
+  font-size: 15px;
+}
+.info .contact_form {
+  width: 380px;
+}
+.info .contact_form .formulario form p .input {
+  width: 320px;
+  font-size: 14px;
+}
+
+.info .contact_form .formulario form p textarea {
+ width: 320px;
+  font-size: 14px;
+}
+
+
+.info .contact_form .formulario form p label {
+ 
+  font-size: 14px;
+}
+.info .contact_form .formulario form .aviso {
+  font-size: 9px;
+}
+.info .contact_form .formulario form .boton {
+  height: 30px;
+  width: 320px;
+}
+
+.info .contact_form .formulario form .boton p {
+  font-size: 14px;
+}
+.informacion ul li p {
+    font-size: 12px;
+  }
+////
   h2 {
     font-size: 18px;
     padding-bottom: 10px;
@@ -464,91 +681,115 @@
     font-size: 9px;
   }
 
-  .card {
-    margin: 20px;
+ 
+}
 
+@media screen and (max-width: 450px) {
+//Index//
+.hero div h1 {
+    margin-left: 20px;
   }
 
-  .presentacion {
-    display: block;
-    background-color: #351711;
-    height: 320px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  .hero div h4 {
+    display: none;
   }
 
-  .presentacion img {
-    margin: 10px;
+  .hero div p {
+    margin-left: 20px;
+    width: 79%;
   }
 
-  .presentacion P {
-    font-size: 9px;
+  .hero div .btn {
+    margin-left: 20px !important;
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+  .hero div img {
+    width: 70%;
+    height: auto;
+    margin-left: 60px;
+  }
+
+  .destacados .card-container .card {
+    margin: 2px;
+  }
+ .destacados h2 {
+    font-size: 19px;
+  }
+
+  .destacados.card-container .card .card-content h3 {
+    margin-bottom: 12px;
+  }
+
+  .destacados.card-container .card .card-content p {
+    margin-bottom: 19px;
+  }
+  
+  .mision div img {
+    margin: 0px;
+    padding: 0;
+    height: 350px;
+    width: 100%;
+  }
+
+  .mision div P {
+    font-size: 12px;
     width: 80%;
-    margin: 10px;
+    margin: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
+  }
+
+  .mision h2 {
+    font-size: 19px;
   }
 
   .mision {
-    display: block;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    height: 600px;
   }
-
-  .mision img {
-    margin: 10px;
-  }
-
-  .mision P {
-    font-size: 9px;
-    width: 80%;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .iframe-index iframe {
-    height: 200px;
-  }
+  //Contacto//
+  .contact_form .formulario h1 {
+  font-size: 20px;
 }
-@media screen and (max-width: 450px) {
-  .contact_form {
-    width: 320px;
-    height: auto;
-    margin: 45px auto;
-    border-radius: 7px;
-    padding-top: 18px;
-    padding-bottom: 15px;
-    padding-left: 18px;
+ .contact_form .formulario h3 {
+  font-size: 15px;
+}
+.contact_form {
+  width: 380px;
+}
+.contact_form .formulario form p .input {
+  width: 320px;
+  font-size: 14px;
+}
+
+.contact_form .formulario form p textarea {
+ width: 320px;
+  font-size: 14px;
+}
+
+
+.contact_form .formulario form p label {
+ 
+  font-size: 14px;
+}
+.contact_form .formulario form .aviso {
+  font-size: 9px;
+}
+.contact_form .formulario form .boton {
+  height: 30px;
+  width: 320px;
+}
+
+.contact_form .formulario form .boton p {
+  font-size: 14px;
+}
+
+.informacion ul li p {
+    font-size: 12px;
   }
 
-  .contact_form .formulario form p .input {
-    width: 260px;
-    height: 20px;
-    margin-top: 7px;
-    padding-left: 7px;
-    margin-bottom: 7px;
-  }
-
-  .contact_form .formulario form p textarea {
-    width: 260px;
-    height: 90px;
-    border-radius: 7px;
-    margin-top: 7px;
-    padding-left: 7px;
-    margin-bottom: 7px;
-    padding-top: 7px;
-  }
-
-  .contact_form .formulario form .boton {
-    height: 20px;
-    border-radius: 7px;
-    width: 260px;
-    
-  }
-
+////
   h2 {
     font-size: 18px;
     padding-bottom: 8px;
@@ -562,128 +803,30 @@
   p {
     font-size: 9px;
   }
-
-  .nosotros h2 {
+//Nosotros//
+  .nosotros h1 {
     font-size: 19px;
   }
-
+//Productos//
+  .productos h1 {
+    font-size: 19px;
+  }
   .productos h2 {
-    font-size: 19px;
+    font-size: 15px;
   }
-
-  .sus-reseñas h2 {
-    font-size: 19px;
-  }
-
-  nav div .collapse.navbar-collapse ul li .nav-link {
-    font-size: 16px;
-  }
-
-  nav div .collapse.navbar-collapse ul .nav-item.dropdown .dropdown-menu .dropdown-item {
-    font-size: 16px;
-  }
-
-  nav div .navbar-toggler {
-    font-size: 12px;
-  }
-
-  .btn {
-    font-size: 11px;
-
-  }
-
-  .hero div h2 {
-    font-size: 19px;
-  }
-
-  .hero div p {
+  .section .card-productos .card .card-content h3 {
     font-size: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
-
-  nav div .collapsenavbar-collapse form .form-control {
-    font-size: 12px;
-  }
-
-  .destacados h2 {
+//Testimonios//
+  .sus-reseñas h1 {
     font-size: 19px;
   }
-
-  section div .card .card-content h3 {
-    margin-bottom: 12px;
-  }
-
-  section div .card .card-content p {
-    margin-bottom: 19px;
-  }
-
-  footer il .icon-elem .icon {
-    font-size: 18px;
-    align-items: center;
-  }
-
-  footer ul .menu-elem .menu-icon {
-    font-size: 11px;
-    align-items: center;
-  }
-
-  footer h4 {
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .presentacion img {
-    margin: 0px;
-    padding: 0;
-    height: 350px;
-    width: 100%;
-  }
-
-  .mision img {
-    margin: 0px;
-    padding: 0;
-    height: 350px;
-    width: 100%;
-
-  }
-
-  .presentacion P {
-    font-size: 12px;
-    color: #0e0e0e;
-    width: 80%;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .mision P {
-    font-size: 12px;
-    width: 80%;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .mision {
-    height: 550px;
-  }
-
-  .presentacion {
-    height: 550px;
-    background-color: #fff;
-  }
-
-  .sus-reseñas h2 {
-    font-size: 19px;
-  }
-
+  
   .reviews-container {
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     margin: 30px;
-
   }
-
+  
   .reviews-container .box {
     padding: 17px;
   }
@@ -692,7 +835,6 @@
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 9px;
-
   }
 
   .reviews-container .box .in-box {
@@ -713,16 +855,81 @@
     font-size: 12px;
     padding-top: -80px;
   }
+  .info  .contact_form .formulario h1 {
+  font-size: 20px;
+}
+ .info .contact_form .formulario h3 {
+  font-size: 15px;
+}
+.info .contact_form {
+  width: 380px;
+}
+.info .contact_form .formulario form p .input {
+  width: 320px;
+  font-size: 14px;
+}
 
-  .contact_form .formulario h3 {
-    font-size: 14px;
+.info .contact_form .formulario form p textarea {
+ width: 320px;
+  font-size: 14px;
+}
+
+
+.info .contact_form .formulario form p label {
+ 
+  font-size: 14px;
+}
+.info .contact_form .formulario form .aviso {
+  font-size: 9px;
+}
+.info .contact_form .formulario form .boton {
+  height: 30px;
+  width: 320px;
+}
+
+.info .contact_form .formulario form .boton p {
+  font-size: 14px;
+}
+
+
+
+
+//Navbar//
+  nav.navbar.navbar-expand-lg.bg-body-tertiary div div ul .nav-link {
+    font-size: 16px;
   }
 
-  .hero {
-    background-image: url(../img/background2.png);
+ nav.navbar.navbar-expand-lg.bg-body-tertiary div div ul li .dropdown-item {
+    font-size: 16px;
   }
 
-  .card {
-    margin: 2px;
+   nav.navbar.navbar-expand-lg.bg-body-tertiary div .navbar-toggler {
+    font-size: 12px;
   }
+
+  nav.navbar.navbar-expand-lg.bg-body-tertiary div form .btn {
+    font-size: 11px;
+
+  }
+
+   nav.navbar.navbar-expand-lg.bg-body-tertiary div form .form-control {
+    font-size: 12px;
+  }
+
+ //Footer//
+   footer .social-icon .icon-elem .icon {
+    font-size: 18px;
+    align-items: center;
+  }
+
+  footer .menu .menu-elem .menu-icon {
+    font-size: 11px;
+    align-items: center;
+  }
+
+  footer h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+
 }
